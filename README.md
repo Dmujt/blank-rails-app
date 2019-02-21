@@ -1,0 +1,1 @@
+Blank Rails app with Devise, Vuejs, webpack, scss, delayed_job

@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col s10 offset-s1">
+    <h5>
+      Login
+    </h5>
+    <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+        <%= devise_error_messages! %>
+
+        <div class="input-field ">
+          <%= f.label :email %>
+          <%= f.email_field :email, autofocus: true, :class=>"form-control" %>
+        </div>
+
+        <div class="input-field">
+          <%= f.label :password %>
+          <%= f.password_field :password, autocomplete: "off" , :class=>"form-control" %>
+        </div>
+
+
+        <div class="input-field">
+          <%= f.submit "Log in", :class=>"btn btn-success waves-effect" %>
+        </div>
+    <% end %>
+
+  </div>
+</div>
